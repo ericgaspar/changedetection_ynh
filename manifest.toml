@@ -22,6 +22,7 @@ architectures = "all"
 multi_instance = true
 
 ldap = false
+
 sso = false
 
 disk = "50M"
@@ -42,6 +43,8 @@ ram.runtime = "80M"
 
     [resources.install_dir]
 
+    [resources.data_dir]
+    
     [resources.permissions]
     main.url = "/"
 
