@@ -19,7 +19,7 @@ ynh_config_add_nginx
 
 ynh_config_add_systemd
 
-yunohost service add "$app" --description="Privacy-respecting metasearch engine" --log="/var/log/$app/$app.log"
+yunohost service add "$app" --description="Web page change detection" --log="/var/log/$app/$app.log"
 
 #=================================================
 # INSTALL PYTHON DEPENDENCIES
@@ -30,7 +30,7 @@ pushd $install_dir
 	ynh_safe_rm "$install_dir/venv"
     python3 -m venv $install_dir/venv
     ynh_hide_warnings $install_dir/venv/bin/pip install --upgrade pip 
-    ynh_hide_warnings $install_dir/venv/bin/pip install whoogle-search==$(ynh_app_upstream_version)
+    ynh_hide_warnings $install_dir/venv/bin/pip install changedetection.io==$(ynh_app_upstream_version)
 popd
 
 chown -R $app:$app "$install_dir"
