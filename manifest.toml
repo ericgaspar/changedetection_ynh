@@ -2,10 +2,10 @@
 
 packaging_format = 2
 
-id = "whoogle"
-name = "Whoogle"
-description.en = "Self-hosted, ad-free, privacy-respecting metasearch engine"
-description.fr = "Métamoteur de recherche auto-hébergé, sans publicité et respectueux de la vie privée"
+id = "changedetection"
+name = "changedetection"
+description.en = "Web page change detection, website watcher, restock monitor and notification service"
+description.fr = "Détection des changements de pages web, surveillance des sites web, surveillance des stocks et service de notification"
 
 version = "0.9.3~ynh1"
 
@@ -13,8 +13,7 @@ maintainers = ["eric_G"]
 
 [upstream]
 license = "MIT"
-code = "https://github.com/benbusby/whoogle-search"
-fund ="https://ko-fi.com/benbusby"
+code = "https://github.com/dgtlmoon/changedetection.io"
 
 [integration]
 yunohost = ">= 12.0.9"
